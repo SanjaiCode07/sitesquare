@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SiteSquare — Digital Architecture Studio</title>
+  <meta name="description" content="SiteSquare is a boutique web development studio crafting high-performance digital environments for visionary brands.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="SiteSquare — Digital Architecture Studio">
+  <meta property="og:description" content="Boutique development laboratory building digital monoliths — sites engineered with architectural precision.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Play CDN & Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-brand-black text-brand-light font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav class="flex items-center justify-between px-8 py-6 sticky top-0 z-50 bg-brand-black/80 backdrop-blur-md border-b border-brand-light/5">
+    <div class="text-2xl font-display font-extrabold tracking-tighter">
+      SITE<span class="text-brand-blue">SQUARE</span>
+    </div>
+    <div class="hidden md:flex gap-12 text-sm font-medium tracking-widest uppercase">
+      <a href="#studio" class="hover:text-brand-blue transition-colors duration-300">Studio</a>
+      <a href="#work" class="hover:text-brand-blue transition-colors duration-300">Work</a>
+      <a href="#services" class="hover:text-brand-blue transition-colors duration-300">Services</a>
+      <a href="#pricing" class="hover:text-brand-blue transition-colors duration-300">Pricing</a>
+      <a href="#contact" class="hover:text-brand-blue transition-colors duration-300">Contact</a>
+    </div>
+    <div id="menu-btn" class="w-10 h-10 border border-brand-light/20 flex flex-col justify-center items-center gap-1.5 cursor-pointer hover:border-brand-blue transition-colors duration-300 z-50 relative" onclick="toggleMobileMenu()">
+      <div id="menu-line-1" class="w-5 h-px bg-brand-light transition-transform duration-300 origin-center"></div>
+      <div id="menu-line-2" class="w-5 h-px bg-brand-light transition-transform duration-300 origin-center"></div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-brand-black z-40 flex flex-col justify-center items-center space-y-8 text-2xl font-display font-bold uppercase tracking-widest">
+    <a href="#studio" onclick="toggleMobileMenu()" class="hover:text-brand-blue">Studio</a>
+    <a href="#work" onclick="toggleMobileMenu()" class="hover:text-brand-blue">Work</a>
+    <a href="#services" onclick="toggleMobileMenu()" class="hover:text-brand-blue">Services</a>
+    <a href="#pricing" onclick="toggleMobileMenu()" class="hover:text-brand-blue">Pricing</a>
+    <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-brand-blue">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="studio" class="relative px-8 pt-32 pb-24 border-b border-brand-light/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+        <div class="lg:col-span-8">
+          <div class="text-xs font-medium tracking-[0.3em] uppercase text-brand-light/40 mb-8">
+            [ Est. 2024 — Digital Architecture Studio ]
+          </div>
+          <h1 class="text-6xl md:text-[120px] font-display font-extrabold leading-[0.9] tracking-tighter mb-8 uppercase">
+            We Build
+            <br />
+            <span class="text-brand-blue">Digital</span>
+            <br />
+            Monoliths
+          </h1>
+          <p class="max-w-md text-lg text-brand-light/60 font-light leading-relaxed">
+            SiteSquare is a boutique development laboratory crafting high-performance
+            digital environments for visionary brands.
+          </p>
+        </div>
+        <div class="lg:col-span-4 flex justify-end pb-4">
+          <a href="#contact" class="group cursor-pointer">
+            <div class="size-32 rounded-full border border-brand-light/20 flex items-center justify-center group-hover:bg-brand-blue group-hover:border-brand-blue transition-all duration-500">
+              <span class="text-xs font-bold tracking-widest uppercase group-hover:scale-110 transition-transform duration-500">
+                Start Project
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Work Section -->
+  <section id="work" class="px-8 py-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-end mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-extrabold uppercase tracking-tighter">
+          Selected Work
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-1">
+        <!-- Project 1 -->
+        <a href="https://www.voiceofdharmafoundation.org" target="_blank" class="relative group overflow-hidden block">
+          <div class="w-full aspect-[20/21] bg-brand-gray overflow-hidden">
+            <img src="assets/voice-of-dharma.png" alt="Voice of Dharma Foundation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black to-transparent opacity-70 pointer-events-none"></div>
+          <div class="absolute bottom-8 left-8">
+            <div class="text-xs font-bold text-brand-blue mb-2 tracking-widest">SPIRITUAL TRUST / 2026</div>
+            <div class="text-2xl font-display font-semibold">Voice of Dharma</div>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://lifelinefitnesscbe.netlify.app" target="_blank" class="relative group overflow-hidden block md:mt-12">
+          <div class="w-full aspect-[20/21] bg-brand-gray overflow-hidden">
+            <img src="assets/lifeline-fitness.png" alt="Lifeline Fitness" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black to-transparent opacity-70 pointer-events-none"></div>
+          <div class="absolute bottom-8 left-8">
+            <div class="text-xs font-bold text-brand-blue mb-2 tracking-widest">HEALTH & FITNESS / 2026</div>
+            <div class="text-2xl font-display font-semibold">Lifeline Fitness</div>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="https://sriduraicoretech.netlify.app" target="_blank" class="relative group overflow-hidden block md:mt-24">
+          <div class="w-full aspect-[20/21] bg-brand-gray overflow-hidden">
+            <img src="assets/sridurai-coretech.png" alt="Sri Durgai Core Tech" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black to-transparent opacity-70 pointer-events-none"></div>
+          <div class="absolute bottom-8 left-8">
+            <div class="text-xs font-bold text-brand-blue mb-2 tracking-widest">MANUFACTURING / 2026</div>
+            <div class="text-2xl font-display font-semibold">Sri Durgai Core Tech</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section -->
+  <section id="services" class="px-8 py-32 bg-brand-light text-brand-black">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-end mb-20">
+        <h2 class="text-4xl md:text-5xl font-display font-extrabold uppercase tracking-tighter">
+          Capabilities
+        </h2>
+        <div class="text-sm font-medium tracking-widest text-brand-black/40 uppercase hidden md:block">
+          Methodology &amp; Stack
+        </div>
+      </div>
+
+      <div class="divide-y divide-brand-black/10">
+        <div class="py-10 md:py-12 flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-12 group cursor-pointer">
+          <div class="text-sm font-bold text-brand-blue md:w-12">01</div>
+          <div class="text-4xl md:text-6xl font-display font-semibold flex-1 group-hover:translate-x-4 transition-transform duration-500">Product Strategy</div>
+          <div class="max-w-xs text-sm text-brand-black/60 leading-relaxed">Defining the blueprint for scalable digital experiences that convert and endure.</div>
+        </div>
+
+        <div class="py-10 md:py-12 flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-12 group cursor-pointer">
+          <div class="text-sm font-bold text-brand-blue md:w-12">02</div>
+          <div class="text-4xl md:text-6xl font-display font-semibold flex-1 group-hover:translate-x-4 transition-transform duration-500">UI Engineering</div>
+          <div class="max-w-xs text-sm text-brand-black/60 leading-relaxed">Bridging design and production with pixel-perfect, interactive frontend development.</div>
+        </div>
+
+        <div class="py-10 md:py-12 flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-12 group cursor-pointer">
+          <div class="text-sm font-bold text-brand-blue md:w-12">03</div>
+          <div class="text-4xl md:text-6xl font-display font-semibold flex-1 group-hover:translate-x-4 transition-transform duration-500">Backend Architecture</div>
+          <div class="max-w-xs text-sm text-brand-black/60 leading-relaxed">Building the robust engine rooms that power heavy-duty enterprise applications.</div>
+        </div>
+
+        <div class="py-10 md:py-12 flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-12 group cursor-pointer">
+          <div class="text-sm font-bold text-brand-blue md:w-12">04</div>
+          <div class="text-4xl md:text-6xl font-display font-semibold flex-1 group-hover:translate-x-4 transition-transform duration-500">Commerce &amp; SEO</div>
+          <div class="max-w-xs text-sm text-brand-black/60 leading-relaxed">High-conversion storefronts and technical SEO baked into the core infrastructure.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Stats Section -->
+  <section class="px-8 py-32 border-b border-brand-light/5">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
+      <div class="border-t border-brand-light/10 pt-6">
+        <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter text-brand-blue">100</div>
+        <div class="mt-3 text-xs font-medium tracking-widest uppercase text-brand-light/50">Lighthouse Score</div>
+      </div>
+      <div class="border-t border-brand-light/10 pt-6">
+        <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter text-brand-blue">48</div>
+        <div class="mt-3 text-xs font-medium tracking-widest uppercase text-brand-light/50">Projects Shipped</div>
+      </div>
+      <div class="border-t border-brand-light/10 pt-6">
+        <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter text-brand-blue">12</div>
+        <div class="mt-3 text-xs font-medium tracking-widest uppercase text-brand-light/50">Industries Served</div>
+      </div>
+      <div class="border-t border-brand-light/10 pt-6">
+        <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter text-brand-blue">&infin;</div>
+        <div class="mt-3 text-xs font-medium tracking-widest uppercase text-brand-light/50">Pixels Refined</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING SECTION ===================== -->
+  <section id="pricing" class="py-40 border-t border-brand-light/5">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <!-- Header -->
+      <div class="mb-20">
+        <div class="text-xs font-medium tracking-[0.3em] uppercase text-brand-blue mb-6">
+          [ 03 &mdash; Engagement ]
+        </div>
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-10">
+          <h2 class="text-5xl md:text-7xl font-display font-extrabold uppercase tracking-tighter leading-[0.9]">
+            Transparent<br />
+            <span class="text-brand-light/25">Pricing.</span>
+          </h2>
+          <p class="max-w-sm text-brand-light/50 text-sm leading-relaxed lg:pb-2">
+            No hidden fees. No surprises. Choose a project package or an ongoing maintenance plan that fits your business.
+          </p>
+        </div>
+      </div>
+
+      <!-- Underline Tab Toggle -->
+      <div class="flex items-end gap-0 mb-16 border-b border-brand-light/10">
+        <button
+          id="btn-project"
+          onclick="setPricingMode('project')"
+          class="relative pb-5 pr-10 text-sm font-bold uppercase tracking-widest transition-all duration-300 text-brand-light border-b-2 border-brand-blue -mb-px"
+        >
+          Project Quote
+        </button>
+        <button
+          id="btn-maintenance"
+          onclick="setPricingMode('maintenance')"
+          class="relative pb-5 px-10 text-sm font-bold uppercase tracking-widest transition-all duration-300 text-brand-light/40 hover:text-brand-light/70 border-b-2 border-transparent -mb-px"
+        >
+          Maintenance
+        </button>
+      </div>
+
+      <!-- PROJECT QUOTE (default visible) -->
+      <div id="pricing-project">
+        <div id="project-scroll-container" class="flex overflow-x-auto lg:grid lg:grid-cols-3 gap-6 flex-nowrap lg:flex-wrap snap-x snap-mandatory pb-6 lg:pb-0 scrollbar-hide scroll-smooth">
+
+          <!-- Tier 1 -->
+          <div class="group flex flex-col border border-brand-light/10 hover:border-brand-light/25 transition-all duration-500 p-8 md:p-12 bg-brand-gray/30 hover:bg-brand-gray/50 w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center">
+            <div class="flex items-start justify-between mb-12">
+              <div>
+                <div class="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-blue mb-3">Tier 01</div>
+                <div class="text-3xl font-display font-bold tracking-tight">Foundation</div>
+              </div>
+              <div class="w-9 h-9 border border-brand-light/15 flex items-center justify-center shrink-0 group-hover:border-brand-blue group-hover:bg-brand-blue transition-all duration-400">
+                <span class="text-sm leading-none group-hover:text-white transition-colors duration-300">&#8599;</span>
+              </div>
+            </div>
+
+            <div class="mb-10">
+              <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter leading-none text-brand-light mb-3">&#8377;3,999</div>
+              <div class="text-xs font-medium tracking-[0.2em] uppercase text-brand-light/35">Fixed scope &nbsp;&middot;&nbsp; 1&ndash;2 weeks</div>
+            </div>
+
+            <p class="text-sm text-brand-light/55 leading-relaxed mb-10 pb-10 border-b border-brand-light/8">
+              A sharp, focused landing page to launch your brand presence fast.
+            </p>
+
+            <ul class="space-y-5 mb-14 flex-1">
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Single-page responsive design
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Mobile-first development
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Contact form integration
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Basic SEO setup &amp; launch
+              </li>
+            </ul>
+
+            <a href="#contact" class="group/btn inline-flex items-center justify-between text-xs font-bold tracking-widest uppercase pt-6 border-t border-brand-light/10 hover:text-brand-blue transition-colors duration-300">
+              <span>Get Started</span>
+              <span class="transition-transform group-hover/btn:translate-x-2 duration-300">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Tier 2 (Featured) -->
+          <div class="group relative flex flex-col p-8 md:p-12 bg-brand-blue overflow-hidden w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center">
+            <div class="absolute -top-24 -right-24 w-56 h-56 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-16 -left-16 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="flex items-start justify-between mb-12 relative z-10">
+              <div>
+                <div class="text-[10px] font-bold tracking-[0.3em] uppercase text-white/60 mb-3">Tier 02 &nbsp;&middot;&nbsp; Most Chosen</div>
+                <div class="text-3xl font-display font-bold tracking-tight text-white">Atelier</div>
+              </div>
+              <div class="w-9 h-9 border border-white/30 flex items-center justify-center shrink-0 bg-white/10 group-hover:bg-white transition-all duration-400">
+                <span class="text-sm leading-none text-white group-hover:text-brand-blue transition-colors duration-300">&#8599;</span>
+              </div>
+            </div>
+
+            <div class="mb-10 relative z-10">
+              <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter leading-none text-white mb-3">&#8377;6,999</div>
+              <div class="text-xs font-medium tracking-[0.2em] uppercase text-white/45">Fixed scope &nbsp;&middot;&nbsp; 2&ndash;4 weeks</div>
+            </div>
+
+            <p class="text-sm text-white/65 leading-relaxed mb-10 pb-10 border-b border-white/15 relative z-10">
+              A complete multi-page website with a content editor and premium interactions.
+            </p>
+
+            <ul class="space-y-5 mb-14 flex-1 relative z-10">
+              <li class="flex items-center gap-4 text-sm text-white/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                Up to 6 bespoke pages
+              </li>
+              <li class="flex items-center gap-4 text-sm text-white/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                CMS setup (Sanity / Payload)
+              </li>
+              <li class="flex items-center gap-4 text-sm text-white/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                Motion &amp; micro-interactions
+              </li>
+              <li class="flex items-center gap-4 text-sm text-white/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                30 days post-launch support
+              </li>
+            </ul>
+
+            <a href="#contact" class="group/btn relative z-10 inline-flex items-center justify-between text-xs font-bold tracking-widest uppercase pt-6 border-t border-white/20 text-white hover:text-white/70 transition-colors duration-300">
+              <span>Get Started</span>
+              <span class="transition-transform group-hover/btn:translate-x-2 duration-300">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="group flex flex-col border border-brand-light/10 hover:border-brand-light/25 transition-all duration-500 p-8 md:p-12 bg-brand-gray/30 hover:bg-brand-gray/50 w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center">
+            <div class="flex items-start justify-between mb-12">
+              <div>
+                <div class="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-blue mb-3">Tier 03</div>
+                <div class="text-3xl font-display font-bold tracking-tight">Monolith</div>
+              </div>
+              <div class="w-9 h-9 border border-brand-light/15 flex items-center justify-center shrink-0 group-hover:border-brand-blue group-hover:bg-brand-blue transition-all duration-400">
+                <span class="text-sm leading-none group-hover:text-white transition-colors duration-300">&#8599;</span>
+              </div>
+            </div>
+
+            <div class="mb-10">
+              <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter leading-none text-brand-light mb-3">&#8377;9,999</div>
+              <div class="text-xs font-medium tracking-[0.2em] uppercase text-brand-light/35">Custom scope &nbsp;&middot;&nbsp; 4&ndash;8 weeks</div>
+            </div>
+
+            <p class="text-sm text-brand-light/55 leading-relaxed mb-10 pb-10 border-b border-brand-light/8">
+              A bespoke platform &mdash; e-commerce, dashboards, or complex web applications.
+            </p>
+
+            <ul class="space-y-5 mb-14 flex-1">
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                E-commerce or custom system
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Payment gateway integration
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Third-party API integrations
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Dedicated launch war-room
+              </li>
+            </ul>
+
+            <a href="#contact" class="group/btn inline-flex items-center justify-between text-xs font-bold tracking-widest uppercase pt-6 border-t border-brand-light/10 hover:text-brand-blue transition-colors duration-300">
+              <span>Get Started</span>
+              <span class="transition-transform group-hover/btn:translate-x-2 duration-300">&rarr;</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Dots Indicator -->
+        <div id="project-dots" class="flex justify-center gap-3 mt-6 lg:hidden">
+          <button onclick="scrollToCard('project-scroll-container', 0)" class="h-2 w-6 rounded-full bg-brand-blue transition-all duration-300" aria-label="Go to slide 1"></button>
+          <button onclick="scrollToCard('project-scroll-container', 1)" class="h-2 w-2 rounded-full bg-brand-light/20 transition-all duration-300" aria-label="Go to slide 2"></button>
+          <button onclick="scrollToCard('project-scroll-container', 2)" class="h-2 w-2 rounded-full bg-brand-light/20 transition-all duration-300" aria-label="Go to slide 3"></button>
+        </div>
+      </div>
+
+      <div id="pricing-maintenance" class="hidden">
+        <div id="maintenance-scroll-container" class="flex overflow-x-auto lg:grid lg:grid-cols-3 gap-6 flex-nowrap lg:flex-wrap snap-x snap-mandatory pb-6 lg:pb-0 scrollbar-hide scroll-smooth">
+
+          <!-- Plan 1 -->
+          <div class="group flex flex-col border border-brand-light/10 hover:border-brand-light/25 transition-all duration-500 p-8 md:p-12 bg-brand-gray/30 hover:bg-brand-gray/50 w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center">
+            <div class="flex items-start justify-between mb-12">
+              <div>
+                <div class="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-blue mb-3">Plan 01</div>
+                <div class="text-3xl font-display font-bold tracking-tight">Light</div>
+              </div>
+              <div class="w-9 h-9 border border-brand-light/15 flex items-center justify-center shrink-0 group-hover:border-brand-blue group-hover:bg-brand-blue transition-all duration-400">
+                <span class="text-sm leading-none group-hover:text-white transition-colors duration-300">&#8599;</span>
+              </div>
+            </div>
+
+            <div class="mb-10">
+              <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter leading-none text-brand-light mb-3">&#8377;500</div>
+              <div class="text-xs font-medium tracking-[0.2em] uppercase text-brand-light/35">Per month</div>
+            </div>
+
+            <p class="text-sm text-brand-light/55 leading-relaxed mb-10 pb-10 border-b border-brand-light/8">
+              Essential upkeep for minor text, image, and content updates.
+            </p>
+
+            <ul class="space-y-5 mb-14 flex-1">
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Up to 1 update request / month
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Minor text &amp; image edits
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Basic uptime monitoring
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Standard email support
+              </li>
+            </ul>
+
+            <a href="#contact" class="group/btn inline-flex items-center justify-between text-xs font-bold tracking-widest uppercase pt-6 border-t border-brand-light/10 hover:text-brand-blue transition-colors duration-300">
+              <span>Start Plan</span>
+              <span class="transition-transform group-hover/btn:translate-x-2 duration-300">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Plan 2 (Featured) -->
+          <div class="group relative flex flex-col p-8 md:p-12 bg-brand-blue overflow-hidden w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center">
+            <div class="absolute -top-24 -right-24 w-56 h-56 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-16 -left-16 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="flex items-start justify-between mb-12 relative z-10">
+              <div>
+                <div class="text-[10px] font-bold tracking-[0.3em] uppercase text-white/60 mb-3">Plan 02 &nbsp;&middot;&nbsp; Most Chosen</div>
+                <div class="text-3xl font-display font-bold tracking-tight text-white">Standard</div>
+              </div>
+              <div class="w-9 h-9 border border-white/30 flex items-center justify-center shrink-0 bg-white/10 group-hover:bg-white transition-all duration-400">
+                <span class="text-sm leading-none text-white group-hover:text-brand-blue transition-colors duration-300">&#8599;</span>
+              </div>
+            </div>
+
+            <div class="mb-10 relative z-10">
+              <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter leading-none text-white mb-3">&#8377;1,000</div>
+              <div class="text-xs font-medium tracking-[0.2em] uppercase text-white/45">Per month</div>
+            </div>
+
+            <p class="text-sm text-white/65 leading-relaxed mb-10 pb-10 border-b border-white/15 relative z-10">
+              Slightly more support &mdash; layout tweaks, section swaps, and regular check-ins.
+            </p>
+
+            <ul class="space-y-5 mb-14 flex-1 relative z-10">
+              <li class="flex items-center gap-4 text-sm text-white/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                Up to 3 update requests / month
+              </li>
+              <li class="flex items-center gap-4 text-sm text-white/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                Layout &amp; image updates
+              </li>
+              <li class="flex items-center gap-4 text-sm text-white/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                Monthly performance check
+              </li>
+              <li class="flex items-center gap-4 text-sm text-white/85">
+                <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                Priority email support
+              </li>
+            </ul>
+
+            <a href="#contact" class="group/btn relative z-10 inline-flex items-center justify-between text-xs font-bold tracking-widest uppercase pt-6 border-t border-white/20 text-white hover:text-white/70 transition-colors duration-300">
+              <span>Start Plan</span>
+              <span class="transition-transform group-hover/btn:translate-x-2 duration-300">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="group flex flex-col border border-brand-light/10 hover:border-brand-light/25 transition-all duration-500 p-8 md:p-12 bg-brand-gray/30 hover:bg-brand-gray/50 w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center">
+            <div class="flex items-start justify-between mb-12">
+              <div>
+                <div class="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-blue mb-3">Plan 03</div>
+                <div class="text-3xl font-display font-bold tracking-tight">Custom</div>
+              </div>
+              <div class="w-9 h-9 border border-brand-light/15 flex items-center justify-center shrink-0 group-hover:border-brand-blue group-hover:bg-brand-blue transition-all duration-400">
+                <span class="text-sm leading-none group-hover:text-white transition-colors duration-300">&#8599;</span>
+              </div>
+            </div>
+
+            <div class="mb-10">
+              <div class="text-5xl md:text-7xl font-display font-extrabold tracking-tighter leading-none text-brand-light mb-3">&#8377;3,000</div>
+              <div class="text-xs font-medium tracking-[0.2em] uppercase text-brand-light/35">Per month</div>
+            </div>
+
+            <p class="text-sm text-brand-light/55 leading-relaxed mb-10 pb-10 border-b border-brand-light/8">
+              Dedicated engineering &mdash; custom coding, integrations, and unlimited changes.
+            </p>
+
+            <ul class="space-y-5 mb-14 flex-1">
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Unlimited update requests
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                Custom coding &amp; new sections
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                API &amp; third-party integrations
+              </li>
+              <li class="flex items-center gap-4 text-sm text-brand-light/75">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>
+                24h priority response SLA
+              </li>
+            </ul>
+
+            <a href="#contact" class="group/btn inline-flex items-center justify-between text-xs font-bold tracking-widest uppercase pt-6 border-t border-brand-light/10 hover:text-brand-blue transition-colors duration-300">
+              <span>Start Plan</span>
+              <span class="transition-transform group-hover/btn:translate-x-2 duration-300">&rarr;</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Dots Indicator -->
+        <div id="maintenance-dots" class="flex justify-center gap-3 mt-6 lg:hidden">
+          <button onclick="scrollToCard('maintenance-scroll-container', 0)" class="h-2 w-6 rounded-full bg-brand-blue transition-all duration-300" aria-label="Go to slide 1"></button>
+          <button onclick="scrollToCard('maintenance-scroll-container', 1)" class="h-2 w-2 rounded-full bg-brand-light/20 transition-all duration-300" aria-label="Go to slide 2"></button>
+          <button onclick="scrollToCard('maintenance-scroll-container', 2)" class="h-2 w-2 rounded-full bg-brand-light/20 transition-all duration-300" aria-label="Go to slide 3"></button>
+        </div>
+      </div>
+
+      <p class="mt-16 text-xs text-brand-light/30 tracking-widest uppercase text-center">
+        All engagements include a free 30-minute discovery call &mdash; no commitment required.
+      </p>
+
+    </div>
+  </section>
+  <!-- ==================== END PRICING ========================= -->
+
+  <!-- Contact CTA Section -->
+  <section id="contact" class="px-8 py-32">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      
+      <!-- Left Column: Typography & Info -->
+      <div class="lg:col-span-5 space-y-12">
+        <div>
+          <div class="text-xs font-medium tracking-[0.3em] uppercase text-brand-blue mb-6">
+            [ 04 &mdash; Initiate ]
+          </div>
+          <h2 class="text-5xl md:text-7xl font-display font-extrabold uppercase tracking-tighter leading-[0.9] mb-6">
+            Have a <span class="text-brand-blue">blueprint</span>?
+            <br />
+            Let's build it.
+          </h2>
+        </div>
+        
+        <div class="space-y-8">
+          <div class="space-y-1">
+            <span class="text-[10px] font-bold tracking-widest text-brand-light/30 uppercase block">Email Address</span>
+            <a href="mailto:studio@sitesquare.co" class="block text-2xl font-display font-semibold hover:text-brand-blue transition-colors duration-300">
+              studio@sitesquare.co
+            </a>
+          </div>
+          <div class="space-y-2">
+            <span class="text-[10px] font-bold tracking-widest text-brand-light/30 uppercase block">Phone Numbers</span>
+            <a href="tel:+917806875749" class="block text-xl font-display font-semibold hover:text-brand-blue transition-colors duration-300">
+              +91 78068 75749
+            </a>
+            <a href="tel:+919443770906" class="block text-xl font-display font-semibold hover:text-brand-blue transition-colors duration-300">
+              +91 94437 70906
+            </a>
+          </div>
+          <div class="text-sm text-brand-light/50 leading-relaxed pt-4 border-t border-brand-light/5">
+            We take on a limited number of engagements each quarter. Send us a brief &mdash;
+            we'll respond within two business days.
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column: Premium Contact Form -->
+      <form id="contact-form" class="lg:col-span-7 bg-brand-gray/20 border border-brand-light/10 p-8 md:p-10 space-y-6">
+        <h3 class="text-xl font-display font-bold uppercase tracking-wide mb-2">Project Inquiry</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label for="contact-name" class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-light/40">Full Name</label>
+            <input type="text" id="contact-name" name="name" required placeholder="John Doe" 
+                   class="w-full bg-brand-black/40 border border-brand-light/10 text-brand-light placeholder-brand-light/20 focus:border-brand-blue/60 focus:ring-1 focus:ring-brand-blue/60 transition-all duration-300 text-sm py-3 px-4 outline-none" />
+          </div>
+          <div class="space-y-2">
+            <label for="contact-email" class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-light/40">Email Address</label>
+            <input type="email" id="contact-email" name="email" required placeholder="john@example.com" 
+                   class="w-full bg-brand-black/40 border border-brand-light/10 text-brand-light placeholder-brand-light/20 focus:border-brand-blue/60 focus:ring-1 focus:ring-brand-blue/60 transition-all duration-300 text-sm py-3 px-4 outline-none" />
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label for="contact-service" class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-light/40">Required Service / Package</label>
+          <div class="relative">
+            <select id="contact-service" name="service" required 
+                    class="w-full bg-brand-black/40 border border-brand-light/10 text-brand-light placeholder-brand-light/20 focus:border-brand-blue/60 focus:ring-1 focus:ring-brand-blue/60 transition-all duration-300 text-sm py-3 pl-4 pr-10 outline-none appearance-none cursor-pointer">
+              <option value="" disabled selected>Select a package or service</option>
+              <option value="Foundation Package (₹3,999)">Foundation Package (₹3,999)</option>
+              <option value="Atelier Package (₹6,999)">Atelier Package (₹6,999)</option>
+              <option value="Monolith Package (₹9,999)">Monolith Package (₹9,999)</option>
+              <option value="Maintenance Plan">Maintenance Plan</option>
+              <option value="Custom Project / Other">Custom Project / Other</option>
+            </select>
+            <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-brand-light/40 text-xs">
+              ▼
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label for="contact-details" class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-light/40">Project Blueprint &amp; Details</label>
+          <textarea id="contact-details" name="details" rows="4" required placeholder="Describe your project vision, features needed, timeline, budget, etc..." 
+                    class="w-full bg-brand-black/40 border border-brand-light/10 text-brand-light placeholder-brand-light/20 focus:border-brand-blue/60 focus:ring-1 focus:ring-brand-blue/60 transition-all duration-300 text-sm py-3 px-4 outline-none resize-none"></textarea>
+        </div>
+
+        <button type="submit" 
+                class="w-full py-4 bg-brand-blue hover:bg-brand-blue/90 border border-brand-blue font-display font-bold uppercase tracking-widest text-[11px] text-white hover:shadow-[0_8px_32px_rgba(37,99,235,0.25)] transition-all duration-500 flex items-center justify-center gap-3 active:scale-[0.98]">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.25 8.477 3.517 2.266 2.268 3.512 5.281 3.51 8.487-.005 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.45L0 24zm6.305-1.654l.361.214a9.955 9.955 0 0 0 5.337 1.548h.005c5.54 0 10.05-4.512 10.054-10.066a9.97 9.97 0 0 0-2.923-7.117 9.96 9.96 0 0 0-7.136-2.934c-5.547 0-10.06 4.513-10.064 10.069a10.03 10.03 0 0 0 1.571 5.305l.235.374L1.758 21.69l3.874-.981.36.214zM16.5 13.568c-.28-.141-1.661-.82-1.918-.914-.257-.094-.444-.141-.63.141-.187.281-.724.914-.887 1.102-.163.187-.327.21-.607.07-.28-.141-1.184-.437-2.257-1.394-.836-.746-1.4-1.668-1.564-1.95-.163-.281-.017-.433.123-.572.126-.125.28-.291.42-.437.14-.146.187-.25.28-.417.094-.167.047-.313-.023-.454-.07-.141-.63-1.517-.864-2.078-.228-.549-.46-.475-.63-.483-.166-.008-.356-.01-.546-.01-.19 0-.5.07-.762.354-.262.281-1 .979-1 2.39 0 1.412 1.028 2.777 1.171 2.964.143.188 2.024 3.09 4.903 4.33.685.295 1.22.471 1.637.603.693.22 1.325.19 1.824.115.556-.083 1.661-.678 1.895-1.334.233-.656.233-1.22.163-1.334-.07-.115-.257-.188-.537-.33z"/>
+          </svg>
+          <span>Submit &amp; Enquire on WhatsApp</span>
+        </button>
+      </form>
+
+  <!-- Footer -->
+  <footer class="px-8 py-12 bg-brand-black border-t border-brand-light/5">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="text-xl font-display font-extrabold tracking-tighter">
+        SITE<span class="text-brand-blue">SQUARE</span>
+      </div>
+      <div class="text-xs text-brand-light/40 tracking-widest uppercase">
+        &copy; 2024 SiteSquare Lab &mdash; All rights reserved.
+      </div>
+      <div class="flex gap-8 text-xs font-bold uppercase tracking-widest">
+        <a href="#" class="hover:text-brand-blue transition-colors duration-300">Instagram</a>
+        <a href="https://wa.me/919443770906" target="_blank" class="hover:text-brand-blue transition-colors duration-300">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/919443770906" target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-2.5 bg-brand-black/80 backdrop-blur-md border border-brand-light/10 rounded-full shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:border-brand-blue/50 hover:bg-brand-black/90 hover:shadow-[0_8px_32px_rgba(37,99,235,0.15)] transition-all duration-300 hover:scale-[1.03] group" aria-label="Chat on WhatsApp">
+    <!-- Icon Container with online indicator -->
+    <div class="relative flex items-center justify-center w-8 h-8 rounded-full bg-brand-light/5 border border-brand-light/10 group-hover:border-[#25D366]/40 transition-colors">
+      <!-- WhatsApp SVG -->
+      <svg class="w-4 h-4 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.25 8.477 3.517 2.266 2.268 3.512 5.281 3.51 8.487-.005 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.45L0 24zm6.305-1.654l.361.214a9.955 9.955 0 0 0 5.337 1.548h.005c5.54 0 10.05-4.512 10.054-10.066a9.97 9.97 0 0 0-2.923-7.117 9.96 9.96 0 0 0-7.136-2.934c-5.547 0-10.06 4.513-10.064 10.069a10.03 10.03 0 0 0 1.571 5.305l.235.374L1.758 21.69l3.874-.981.36.214zM16.5 13.568c-.28-.141-1.661-.82-1.918-.914-.257-.094-.444-.141-.63.141-.187.281-.724.914-.887 1.102-.163.187-.327.21-.607.07-.28-.141-1.184-.437-2.257-1.394-.836-.746-1.4-1.668-1.564-1.95-.163-.281-.017-.433.123-.572.126-.125.28-.291.42-.437.14-.146.187-.25.28-.417.094-.167.047-.313-.023-.454-.07-.141-.63-1.517-.864-2.078-.228-.549-.46-.475-.63-.483-.166-.008-.356-.01-.546-.01-.19 0-.5.07-.762.354-.262.281-1 .979-1 2.39 0 1.412 1.028 2.777 1.171 2.964.143.188 2.024 3.09 4.903 4.33.685.295 1.22.471 1.637.603.693.22 1.325.19 1.824.115.556-.083 1.661-.678 1.895-1.334.233-.656.233-1.22.163-1.334-.07-.115-.257-.188-.537-.33z"/>
+      </svg>
+      <!-- Pulse dot indicator -->
+      <span class="absolute -top-0.5 -right-0.5 w-2 h-2 bg-[#25D366] rounded-full border border-brand-black"></span>
+      <span class="absolute -top-0.5 -right-0.5 w-2 h-2 bg-[#25D366] rounded-full animate-ping opacity-75"></span>
+    </div>
+    
+    <!-- Text Labels -->
+    <div class="flex flex-col pr-1 text-left">
+      <span class="text-[9px] font-bold text-brand-light/40 tracking-[0.1em] uppercase leading-none mb-1">WhatsApp</span>
+      <span class="text-[11px] font-bold text-brand-light tracking-widest uppercase leading-none">Chat with us</span>
+    </div>
+  </a>
+</body>
+</html>
