@@ -231,7 +231,7 @@ function renderContent(data) {
       `).join('');
 
       return `
-        <div class="group relative flex flex-col p-8 md:p-12 transition-all duration-500 w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center ${cardBg}">
+        <div class="group relative flex flex-col p-8 md:p-12 transition-all duration-500 w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center overflow-hidden ${cardBg}">
           ${isFeatured ? `
             <div class="absolute -top-24 -right-24 w-56 h-56 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
             <div class="absolute -bottom-16 -left-16 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
@@ -289,7 +289,7 @@ function renderContent(data) {
       `).join('');
 
       return `
-        <div class="group relative flex flex-col p-8 md:p-12 transition-all duration-500 w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center ${cardBg}">
+        <div class="group relative flex flex-col p-8 md:p-12 transition-all duration-500 w-[85vw] sm:w-[380px] lg:w-auto shrink-0 snap-center overflow-hidden ${cardBg}">
           ${isFeatured ? `
             <div class="absolute -top-24 -right-24 w-56 h-56 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
             <div class="absolute -bottom-16 -left-16 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
