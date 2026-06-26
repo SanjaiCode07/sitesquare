@@ -171,6 +171,12 @@ function loadDynamicData() {
 }
 
 function renderContent(data) {
+  // 0. Render hero description
+  const heroDesc = document.getElementById('hero-description');
+  if (heroDesc && data.hero && data.hero.description) {
+    heroDesc.textContent = data.hero.description;
+  }
+
   // 1. Render projects
   const projectsGrid = document.getElementById('projects-grid');
   if (projectsGrid && data.projects) {
