@@ -1,0 +1,147 @@
+{
+  "contact": {
+    "email": "studio@sitesquare.co",
+    "phones": [
+      "+91 78068 75749",
+      "+91 94437 70906"
+    ],
+    "whatsapp": "919443770906"
+  },
+  "projects": [
+    {
+      "title": "Voice of Dharma",
+      "category": "SPIRITUAL TRUST",
+      "year": "2026",
+      "image": "assets/voice-of-dharma.png",
+      "link": "https://www.voiceofdharmafoundation.org"
+    },
+    {
+      "title": "Lifeline Fitness",
+      "category": "HEALTH & FITNESS",
+      "year": "2026",
+      "image": "assets/lifeline-fitness.png",
+      "link": "https://lifelinefitnesscbe.netlify.app"
+    },
+    {
+      "title": "Sri Durgai Core Tech",
+      "category": "MANUFACTURING",
+      "year": "2026",
+      "image": "assets/sridurai-coretech.png",
+      "link": "https://sriduraicoretech.netlify.app"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "01",
+      "title": "Product Strategy",
+      "description": "Defining the blueprint for scalable digital experiences that convert and endure."
+    },
+    {
+      "id": "02",
+      "title": "UI Engineering",
+      "description": "Bridging design and production with pixel-perfect, interactive frontend development."
+    },
+    {
+      "id": "03",
+      "title": "Backend Architecture",
+      "description": "Building the robust engine rooms that power heavy-duty enterprise applications."
+    },
+    {
+      "id": "04",
+      "title": "Commerce & SEO",
+      "description": "High-conversion storefronts and technical SEO baked into the core infrastructure."
+    }
+  ],
+  "pricing": {
+    "project": [
+      {
+        "id": "project-01",
+        "tier": "Tier 01",
+        "name": "Foundation",
+        "price": "₹3,999",
+        "duration": "1-2 weeks",
+        "description": "A sharp, focused landing page to launch your brand presence fast.",
+        "features": [
+          "Single-page responsive design",
+          "Mobile-first development",
+          "Contact form integration",
+          "Basic SEO setup & launch"
+        ]
+      },
+      {
+        "id": "project-02",
+        "tier": "Tier 02",
+        "name": "Atelier",
+        "price": "₹6,999",
+        "duration": "2-4 weeks",
+        "description": "A complete multi-page website with a content editor and premium interactions.",
+        "featured": true,
+        "features": [
+          "Up to 6 bespoke pages",
+          "CMS setup (Sanity / Payload)",
+          "Motion & micro-interactions",
+          "30 days post-launch support"
+        ]
+      },
+      {
+        "id": "project-03",
+        "tier": "Tier 03",
+        "name": "Monolith",
+        "price": "₹9,999",
+        "duration": "4-8 weeks",
+        "description": "A bespoke platform — e-commerce, dashboards, or complex web applications.",
+        "features": [
+          "E-commerce or custom system",
+          "Payment gateway integration",
+          "Third-party API integrations",
+          "Dedicated launch war-room"
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "id": "maint-01",
+        "tier": "Plan 01",
+        "name": "Light",
+        "price": "₹500",
+        "duration": "Per month",
+        "description": "Essential upkeep for minor text, image, and content updates.",
+        "features": [
+          "Up to 1 update request / month",
+          "Minor text & image edits",
+          "Basic uptime monitoring",
+          "Standard email support"
+        ]
+      },
+      {
+        "id": "maint-02",
+        "tier": "Plan 02",
+        "name": "Standard",
+        "price": "₹1,000",
+        "duration": "Per month",
+        "description": "Slightly more support — layout tweaks, section swaps, and regular check-ins.",
+        "featured": true,
+        "features": [
+          "Up to 3 update requests / month",
+          "Layout & image updates",
+          "Monthly performance check",
+          "Priority email support"
+        ]
+      },
+      {
+        "id": "maint-03",
+        "tier": "Plan 03",
+        "name": "Custom",
+        "price": "₹3,000",
+        "duration": "Per month",
+        "description": "Dedicated engineering — custom coding, integrations, and unlimited changes.",
+        "features": [
+          "Unlimited update requests",
+          "Custom coding & new sections",
+          "API & third-party integrations",
+          "24h priority response SLA"
+        ]
+      }
+    ]
+  }
+}
